@@ -1,0 +1,96 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+
+.blackbutton {
+    font-family: 'Open Sans';
+    padding: 11px 40px;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 22px;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+
+color: #FFFFFF;
+background: #000000
+}
+
+
+.delivery {
+ padding: 11px 40px ;
+ font-weight: 700;
+ font-family: 'Crimson Text';
+background: rgba(112, 187, 220, 0.2);
+font-size: 26px;
+line-height: 34px;
+    font-style: italic;
+}
+
+fieldset {
+    width: 1400px;
+height: 254px;
+left: 0px;
+top: 301px;
+
+background: rgba(125, 151, 218, 0.2);
+}
+
+.price {
+    font-weight: 700;
+}
+
+footer {
+   background-color: #434343;
+   color: #FFFFFF;
+   font-family: 'Open Sans';
+   font-weight: 400;
+   
+}
+
+header {
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+.guarantee {
+    font-family: 'Crimson Text';
+    font-weight: 400;
+    font-size: 26px;
+}
+
+form {
+max-width: max-content;
+height: 542px;
+left: 110px;
+top: 301px;
+background: #E5EAF8
+}
