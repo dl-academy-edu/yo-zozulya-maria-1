@@ -7,6 +7,7 @@
 a {
     list-style: none;
     text-decoration: none;
+    color: #1E0606;
 }
 
 li {
@@ -14,7 +15,7 @@ li {
 }
 
 .container {
-    max-width: 1180px;
+    
     margin: 0 auto;
 }
 
@@ -73,12 +74,126 @@ footer {
    color: #FFFFFF;
    font-family: 'Open Sans';
    font-weight: 400;
+   height: 555px;
+   margin-right: auto;
+   overflow: hidden;
+
    
 }
 
+.basement {
+    display: flex;
+    width: 1400px;
+}
+
+.footer-item {
+    margin-bottom: 15px;
+    size: 16px;
+    margin-left: 110px;
+}
+
+.border {
+    display: inline-block;
+    border-color: #666666;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding-bottom: 25px;
+    width: 380px;
+    color: #AAAAAA;
+    margin-top: 100px;
+
+    
+}
+
 header {
+    display: flex;
+    margin-top: 33px;
+    margin-bottom: 33px;
+    align-items: justify;
     font-family: 'Open Sans';
     font-weight: 400;
+    text-transform: uppercase;
+
+}
+
+.header__nav {
+    margin-right: 500px;
+}
+
+.header__list {
+    color: #000000;
+}
+
+
+.emailbutton {
+    background: #666666;
+    height: 40px;
+width: 380px;
+left: 910px;
+top: 171px;
+border-radius: 0px;
+
+}
+
+.scnetwork {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.facebook {
+    margin-top: 25px;
+    margin-right: 10px
+}
+
+.twitter {
+    margin-top: 25px;
+    margin-right: 10px
+}
+
+.pinterest {
+    margin-top: 25px;
+    margin-right: 10px
+}
+
+.instagram {
+    margin-top: 25px;
+    margin-right: 10px
+}
+
+
+.left {
+    margin-right: auto;
+}
+
+.header__logo {
+    margin-left: 110px;
+    margin-right: 60px;
+    margin-top: 50px;
+}
+
+.header__nav {
+    display: flex;
+    
+}
+
+.header__list {
+    display: flex;
+
+}
+
+.header__list-item {
+    margin-right: 20px;
+    margin-top: 70px;
+
+}
+
+.link-info {
+    margin-left: 225px;
+} 
+
+
+.contact {
+ margin-right:  110px;   
 }
 
 .guarantee {
@@ -93,4 +208,62 @@ height: 542px;
 left: 110px;
 top: 301px;
 background: #E5EAF8
+}
+
+.footer-link {
+    color: #FFFFFF;
+}
+
+.bottom {
+    width: 1180px;
+    display: flex;
+    margin-left: 110px;
+    margin-right: 110px;
+    border-top-style: solid;
+    border-color: #666666;
+    border-top-width: 1px;
+    white-space: nowrap 
+
+}
+
+.copyright {
+    margin-left: 280px;
+    margin-right: 110px
+    
+}
+
+.drline {
+    color: #A2A2A2;
+}
+
+.bottom-item {
+    margin-top: 25px;
+    margin-bottom: 100px
+}
+
+.rating {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: #434343;
+
+}
+
+.rating_star {
+    appearance: none;
+    top: 0px;
+    left: 0px;
+    width: 2em;
+    height: 2em;
+    -webkit-appearance: none;
+    background-color: #FFFFFF;
+    -moz-appearance: none;
+}
+
+.rating_star:nth-of-type(1) {
+    width: 2em;
+}
+
+.rating_star:nth-of-type(2) {
+    width: 4em;
 }

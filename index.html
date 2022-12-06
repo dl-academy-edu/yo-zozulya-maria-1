@@ -11,15 +11,19 @@
     <title>Main</title>
 </head>
 <body>
-    <header class="container">
-        <a href="#"><img src="./img/icon/DLC.svg" alt="dlc"></a>
-       <u>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Catalog</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#"></a>🔍</li>
-        <li><a href="#">Contact Us</a></li>
-    </u>
+    <header class=" header container">
+        <a href="#" class="header__link">
+            <img class="header__logo" src="./img/icon/DLC.svg" alt="dlc">
+        </a>
+        <nav class="header__nav left">
+       <ul class="header__list">
+        <li class="header__list-item"><a href="#">Blog</a></li>
+        <li class="header__list-item"><a href="#">Catalog</a></li>
+        <li class="header__list-item"><a href="#">About Us</a></li>
+    </nav>
+        <li class="header__list-item"><a href="#"></a><img src="img/icon/glass.svg" alt="glass"></li>
+        <li class="header__list-item contact"><a href="#">Contact Us</a></li>
+    </ul>
     </header>
     <main>
 <section class="container">
@@ -79,43 +83,55 @@
 
     </main>
     <footer class="container">
+        <div class="basement">
         <section>
-            <p>Navigation</p>
+            <p class="footer-item border" >Navigation</p>
             <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Design Services</a></li>
-            <li><a href="#">Featured On</a></li>
-            <li><a href="#">2018 Holiday Catalog</a></li>
-            <li><a href="#">Shop By Designer</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">About Us</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">Blog</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">Design Services</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">Featured On</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">2018 Holiday Catalog</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">Shop By Designer</a></li>
         </ul>
         </section>
         <section>
-            <p>Customer Information</p>
+            <p class="footer-item border">Customer Information</p>
             <ul>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Sale Exclusions</a></li>
-            <li><a href="#">Shipping & Returns</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Search</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">Contact Us</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">Sale Exclusions</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">Shipping & Returns</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">Terms & Conditions</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">Privacy Policy</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">Search</a></li>
         </ul>
         </section>
-        <section>
-            <p>Connect</p>
-            <input type="text">
+        <section >
+            <p class="footer-item border">Connect</p>
+            <input class="emailbutton" type="text">
+            <button class="blackbutton" type="button" >JOIN</button>
             <br>
-            <a href="#"><img src="./img/icon/facebook.svg" alt="facebook"></a>
-            <a href="#"><img src="./img/icon/twitter.svg" alt="twitter"></a>
-            <a href="#"><img src="./img/icon/pinterest.svg" alt="pinterest"></a>
-            <a href="#"><img src="./img/icon/instagram.svg" alt="instagram"></a>
-
+            <a  href="#"><img class="scnetwork facebook" src="./img/icon/facebook.svg" alt="facebook"></a>
+            <a href="#"><img class="scnetwork twitter" src="./img/icon/twitter.svg" alt="twitter"></a>
+            <a href="#"><img class="scnetwork pinterest" src="./img/icon/pinterest.svg" alt="pinterest"></a>
+            <a href="#"><img class="scnetwork instagram" src="./img/icon/instagram.svg" alt="instagram"></a>
+        </div>
         </section>
-        <section>
-            <p>Company Rating ★★★★★</p>
-            <p>Copyright © 2018 Dlk • Design Life Kids</p>
-            <p>Web Design — Direct Line Development</p>
+        <div >
+        <section class="bottom">
+            <fieldset class="rating">
+            <p class="bottom-item"> Company Rating
+                <input class="rating_star" type="radio" name="health" value="1" checked aria-label="atrocious">
+                <input class="rating_star" type="radio" name="health" value="2" aria-label="bad">
+                <input class="rating_star" type="radio" name="health" value="3" aria-label="okay">
+                <input class="rating_star" type="radio" name="health" value="4" aria-label="good">
+                <input class="rating_star" type="radio" name="health" value="5" aria-label="great">
+            </fieldset>
+            </p>
+            <p class="copyright bottom-item">Copyright © 2018 Dlk • Design Life Kids</p>
+            <p class="drline bottom-item">Web Design — Direct Line Development</p>
         </section>
+    </div>
     </footer>
 </body>
 </html>
