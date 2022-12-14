@@ -1,0 +1,208 @@
+.banner {
+    background-image: url(./img/monster.png);
+    background-repeat: no-repeat;
+    background-color:  #EEE4DB;
+    margin-top: 130px;
+    width: 1180px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 40px;
+    margin-left: 140px;
+    width: 307px;
+    height: 88px;
+    left: 243px;
+    top: 320px;
+}
+
+.monster {
+    margin-left: 450px;
+    margin-bottom: 250px;
+    margin-top: -237px;
+}
+
+.message {
+    margin-left: 130px;
+    margin-top: -450px;
+}
+
+.shipping {
+    font-family: 'Open Sans' ;
+    margin-top: 105px;
+    background-color: #C29974;
+    width: 1180px;
+    height: 39px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.design {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.number {
+    padding-left: 28px;
+    padding-top: 17px;
+}
+
+.rectangle {
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.products__title {
+    margin-top: 90px;
+    margin-bottom: 30px;
+    font-size: 38px;
+    text-transform: uppercase;
+}
+
+.products {
+    display: flex;
+    gap: 20px;
+}
+
+.delivery__item {
+    margin-bottom: 20px;
+    font-family: Crimson Text;
+   font-size: 26px;
+   font-style: italic;
+   font-weight: 400;
+   line-height: 34px;
+   letter-spacing: 0em;
+   text-align: left;
+   
+   }
+
+.delivery {
+    font-weight: 700;
+    font-family: 'Crimson Text';
+    background: rgba(112, 187, 220, 0.2);
+    font-size: 26px;
+    font-style: italic;
+    position: relative;
+}
+
+.delivery__list {
+    display: flex;
+}
+
+.delivery__title {
+    position: relative;
+    left: 100px;
+    top: 30px;
+    font-size: 38px;
+}
+
+
+
+.delivery__elements {
+    margin-top: 100px;
+    margin-left: -100px;
+}
+
+.delivery__description {
+    margin-bottom: 15px;
+    font-family: 'Open Sans';
+    size: 16px;
+
+}
+
+.delivery__description-2 {
+    font-family: 'Open Sans';
+    size: 16px;
+    margin-bottom: 30px;
+
+}
+
+.logos {
+    display: flex;
+    gap: 127px;
+    margin-top: 90px;
+}
+
+.about {
+    display: flex;
+    margin-top: 90px;
+    gap: 60px;
+    padding-bottom: 160px;
+}
+
+.design-life__title {
+    font-size: 38px;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 25px;
+    left: 20px;
+}
+
+.design-life__item {
+    position: relative;
+    margin-left: 30px;
+}
+
+.design-life__about {
+    position: relative;
+    bottom: 10px;
+}
+
+.design-life__text {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.design-life {
+    width: 543px;
+    height: 228px;
+    background: #E1F0F7;
+}
+
+.map {
+    width: 543px;
+    height: 228px;
+    background: #E1F0F7;
+}
+
+.map__title {
+    font-size: 38px;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 25px;
+    left: 20px;
+}
+
+.map__text {
+    position: relative;
+    left: 30px;
+    margin-bottom: 30px;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.map__adress {
+    position: relative;
+    left: 30px;
+}
+
+button {
+    border: none
+}
+
+.button__title {
+   padding-left: 15px;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 33px;
+    margin-bottom: 100px;
+    gap: 6px;
+}
