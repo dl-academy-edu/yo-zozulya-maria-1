@@ -5,79 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/common.css">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style__catalog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
     <title>Main</title>
 </head>
 <body>
-    <header>
-        <a href="#"><img src="./img/icon/DLC.svg" alt="dlc"></a>
-       <u>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Catalog</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#"></a>🔍</li>
-        <li><a href="#">Contact Us</a></li>
-    </u>
+    <header class=" header container">
+        <a href="#" class="header__link">
+            <img class="header__logo" src="./img/icon/DLC.svg" alt="dlc">
+        </a>
+        <nav class="header__nav left">
+       <ul class="header__list">
+        <li class="header__list-item"><a href="#">Blog</a></li>
+        <li class="header__list-item"><a href="#">Catalog</a></li>
+        <li class="header__list-item"><a href="#">About Us</a></li>
+    </nav>
+        <li class="header__list-item"><a href="#"></a><img src="img/icon/glass.svg" alt="glass"></li>
+        <li class="header__list-item contact"><a href="#">Contact Us</a></li>
+    </ul>
     </header>
     <main>
-        <section>
-        <h1>Category Products</h1>
-        <ul>
-            <li><a href="#"><img src="./img/sweater.jpg" alt="sweater" width="244" height="177" >APPAREL KIDS</a></li>
-            <li><a href="#"><img src="./img/sock.jpg" alt="sock" width="208" height="244">HOLIDAY SHOP</a></li>
-            <li><a href="#"><img src="./img/deer.jpg" alt="deer" width="270" height="270">TOYS</a></li>
-            <li><a href="#"><img src="./img/accessories.jpg" alt="monster" width="240" height="250">ACCESSORIES</a></li>
-            <li><a href="#"><img src="./img/flamingo.jpg" alt="flamingo"  width="248" height="248">SALE</a></li>
-            <li><a href="#"><img src="./img/raincoat.jpg" alt="raincoat"  width="271" height="204">APPAREL ADULTS</a></li>
+        <section class="container">
+        <h1 class="catalog__title">Category Products</h1>
+        <p class="home">Home</p> 
+        <a class="arrow" href="#"><img src="./img/arrow.png" alt="arrow" width="8" height="12"></a> 
+        <p class="catalog-transparent">Catalog</p>
+        <ul class="catalog-1">
+            <li class="catalog-item"><a href="#"><img src="./img/sweater.jpg" alt="sweater" width="280" height="270" ></a></li>
+            <li class="catalog-item"><a href="#"><img src="./img/sock.jpg" alt="sock" width="280" height="270"></a></li>
+            <li class="catalog-item"><a href="#"><img src="./img/deer.jpg" alt="deer" width="270" height="270"></a></li>
         </ul>
-        <h2>Product description</h2>
-        <p>Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
-        <p>A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
-        <p>The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+        <ul class="catalog-2">
+            <li class="catalog-item"><a href="#"><img src="./img/man.jpg" alt="man" width="280" height="270"></a></li>
+            <li class="catalog-item"><a href="#"><img src="./img/flamingo.jpg" alt="flamingo"  width="280" height="270"></a></li>
+            <li class="catalog-item"><a href="#"><img src="./img/raincoat.jpg" alt="raincoat"  width="280" height="270"></a></li>
+        </ul>
+        <h2 class="description__title">Product description</h2>
+        <div class="description">
+        <p class="description__item">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
+        <p class="description__item">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
+        <p class="description__item">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+    </div>
     </section>
     </main>
 
-    <footer>
-        <section>
-            <p>Navigation</p>
+    <footer class="footer">
+        <div class="container">
+        <div class="basement">
+            <section>
+            <p class="footer-item footer__title" >Navigation</p>
             <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Design Services</a></li>
-            <li><a href="#">Featured On</a></li>
-            <li><a href="#">2018 Holiday Catalog</a></li>
-            <li><a href="#">Shop By Designer</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">About Us</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">Blog</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">Design Services</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">Featured On</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">2018 Holiday Catalog</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">Shop By Designer</a></li>
         </ul>
         </section>
         <section>
-            <p>Customer Information</p>
+            <p class="footer-item footer__title">Customer Information</p>
             <ul>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Sale Exclusions</a></li>
-            <li><a href="#">Shipping & Returns</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Search</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">Contact Us</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">Sale Exclusions</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">Shipping & Returns</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">Terms & Conditions</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">Privacy Policy</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">Search</a></li>
         </ul>
         </section>
-        <section>
-            <p>Connect</p>
-            <input type="text">
-            <br>
-            <a href="#"><img src="./img/icon/facebook.svg" alt="facebook"></a>
-            <a href="#"><img src="./img/icon/twitter.svg" alt="twitter"></a>
-            <a href="#"><img src="./img/icon/pinterest.svg" alt="pinterest"></a>
-            <a href="#"><img src="./img/icon/instagram.svg" alt="instagram"></a>
-
+        <section >
+            <p class="footer-item footer__title">Connect</p>
+            <form action="" class="footer__form">
+            <input class="emailbutton" type="text">
+            <button class="joinbutton" type="submit" >JOIN</button>
+            </form>
+            <a  href="#"><img class="scnetwork facebook" src="./img/icon/facebook.svg" alt="facebook"></a>
+            <a href="#"><img class="scnetwork twitter" src="./img/icon/twitter.svg" alt="twitter"></a>
+            <a href="#"><img class="scnetwork pinterest" src="./img/icon/pinterest.svg" alt="pinterest"></a>
+            <a href="#"><img class="scnetwork instagram" src="./img/icon/instagram.svg" alt="instagram"></a>
+        </div>
         </section>
-        <section>
-            <p>Company Rating ★★★★★</p>
-            <p>Copyright © 2018 Dlk • Design Life Kids</p>
-            <p>Web Design — Direct Line Development</p>
-        </section>
+        <div >
+        <section class="bottom">
+            <fieldset class="rating">
+            <p class="bottom-item"> Company Rating
+                <input class="rating_star" type="radio" name="health" value="1" checked aria-label="atrocious">
+                <input class="rating_star" type="radio" name="health" value="2" aria-label="bad">
+                <input class="rating_star" type="radio" name="health" value="3" aria-label="okay">
+                <input class="rating_star" type="radio" name="health" value="4" aria-label="good">
+                <input class="rating_star" type="radio" name="health" value="5" aria-label="great">
+            </fieldset>
+            </p>
+            <p class="copyright bottom-item">Copyright © 2018 Dlk • Design Life Kids</p>
+            <p class="drline bottom-item">Web Design — Direct Line Development</p>
+                </section>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
