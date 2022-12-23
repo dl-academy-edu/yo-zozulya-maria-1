@@ -253,3 +253,89 @@ header {
 .rating_star:nth-of-type(2) {
     width: 4em;
 }
+
+.contact__form {
+    margin: auto;
+    max-width: 680px;
+    background: #E5EAF8;
+    padding: 40px 60px;
+}
+
+.column__two-input {
+    display: flex;
+    gap: 20px;
+}
+
+.label__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__label {
+    display: block;
+    margin-bottom: 6px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.contact__input {
+    gap: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 290px;
+    height: 50px;
+}
+
+.name__input {
+    width: 600px;
+    height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.contact__wrapper {
+    margin-top: 20px;
+}
+
+.textarea {
+    resize: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 600px;
+    height: 150px;
+}
+
+.checkbox__wrapper {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    gap: 15px;
+    display: flex
+}
+
+.checkbox__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 15px;
+}
+
+.checkbox {
+    position: absolute;
+    opacity: 0;
+    margin: 0;
+}
+
+.checkbox__text::before {
+    content: "";
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+    background-image: url(../img/icon/checkbox.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-left: -30px;
+}

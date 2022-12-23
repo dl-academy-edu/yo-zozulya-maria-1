@@ -69,6 +69,17 @@
     gap: 20px;
 }
 
+.products__item {
+    position: relative;
+    bottom: 160px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 26px;
+    font-weight: 700;
+    color: #FFFFFF;
+
+}
+
 .delivery__item {
     margin-bottom: 20px;
     font-family: Crimson Text;

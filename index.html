@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="css/style__index.css">
 <link rel="stylesheet" href="css/normalize.css">
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,700&family=Roboto&display=swap" rel="stylesheet">
     <title>Main</title>
 </head>
 <body>
@@ -51,12 +51,12 @@
 </section>
 <section class="container">
     <h2 class="products__title" >Category Products</h2>
-    <div class="products">
-    <ul><a href="#"><img src="./img/sweater.jpg" alt="APPAREL KIDS" width="280" height="270"></a></ul>
-    <ul><a href="#"><img src="./img/sock.jpg" alt="HOLIDAY SHOP" width="280" height="270"></a></ul>
-    <ul><a href="#"><img src="./img/deer.jpg" alt="TOYS" width="270" height="270" ></a></ul>
-    <ul><a href="#"><img src="./img/man.jpg" alt="ACCESSORIES" width="280" height="270"></a></ul>
-    </div>
+    <ul class="products">
+    <li ><a href="#"><img src="./img/sweater.jpg" alt="APPAREL KIDS" width="280" height="270"> <p class="products__item">APPAREL <br> KIDS</p></a></li>
+    <li ><a href="#"><img src="./img/sock.jpg" alt="HOLIDAY SHOP" width="280" height="270"><p class="products__item"> HOLIDAY <br> SHOP</p></a></li>
+    <li ><a href="#"><img src="./img/deer.jpg" alt="TOYS" width="270" height="270"> <p class="products__item"> TOYS </p></a></li>
+    <li ><a href="#"><img src="./img/man.jpg" alt="ACCESSORIES" width="280" height="270"> <p class="products__item"> ACCESSORIES </p></a></li>
+    </ul>
     <div class="buttons">
     <button type="button"> <img src="./img/button-left.jpg" alt="button-left" width="37" height="37"> </button> <button type="button"><img src="./img/button-right.jpg" alt="button-right" width="37" height="37"></button> 
     <p class="button__title">Modern finds for the modern home. Curated goods by unique designers <br> around the world from fashion to furniture for kids and adults.</p>
@@ -153,5 +153,32 @@
             </div>
         </div>
     </footer>
+    <div class="popup">
+        <form class="contact__form" method="post" action="#">
+                <div class="label__wrapper">
+                    <label class="contact__label" for="Name">Name</label>
+                    <input class="name__input" type="text" id="Name">
+                </div>
+                <div class="column__two-input">
+                <div class="label__wrapper">
+                    <label class="contact__label" for="Phone">Phone</label>
+                    <input class="contact__input" type="tel" id="Phone">
+                </div>
+                <div class="label__wrapper">
+                    <label class="contact__label" for="Email">Email</label>
+                    <input class="contact__input" type="email" id="Email">
+                </div>
+                </div>
+                <div class="contact__wrapper">
+                <label class="contact__label" for="textarea"> Message</label>
+                </div>
+                <textarea class="textarea"  id="textarea" cols="30" rows="10"></textarea>
+                <div class="checkbox__wrapper">
+                <input class="checkbox" type="radio">
+                <p class="checkbox__text">By clicking on the button, you consent to the processing of your personal data</p>
+                </div>
+                <button type="submit">SUBMIT</button>
+        </form>
+    </div>
 </body>
 </html>

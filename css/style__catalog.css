@@ -14,7 +14,8 @@ text-transform: uppercase;
 
 .catalog-2 {
     display: flex;
-    margin-left: 310px;
+    margin-left: 280px;
+    margin-top: -70px;
 }
 
 .catalog-item {
@@ -52,7 +53,7 @@ text-transform: uppercase;
 }
 
 .description__title {
-    margin-top: 55px;
+    margin-top: -40px;
     margin-bottom: 25px;
     margin-left: 280px;
     font-family: 'Montserrat';
@@ -76,4 +77,27 @@ text-transform: uppercase;
 
 .description__item {
     margin-bottom: 15px;
+}
+
+.catalog-1__link {
+    position: relative;
+    bottom: 160px;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+
+}
+
+.catalog-2__link {
+    position: relative;
+    bottom: 155px;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
 }
