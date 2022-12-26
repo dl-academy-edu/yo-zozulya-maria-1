@@ -310,7 +310,8 @@ header {
     margin-top: 20px;
     margin-bottom: 30px;
     gap: 15px;
-    display: flex
+    display: flex;
+    margin-left: 15px;
 }
 
 .checkbox__text {
@@ -338,4 +339,20 @@ header {
     background-repeat: no-repeat;
     position: absolute;
     margin-left: -30px;
+}
+
+.checkbox:checked + .checkbox__text::before {
+    content: "";
+    width: 19px;
+    height: 19px;
+    background-image: url(../img/icon/checkbox-ch.png);
+}
+
+.checkbox-btn{
+    width: 106px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 9px 22px;
 }
