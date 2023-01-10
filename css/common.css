@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 a {
@@ -31,7 +32,6 @@ body {
 
 .blackbutton {
     font-family: 'Open Sans';
-    padding: 11px 40px;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -40,7 +40,8 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    background: #000000
+    background: #000000;
+    cursor: pointer;
 }
 
 .joinbutton {
@@ -56,6 +57,7 @@ body {
     height: 45px;
     
 }
+
 
 
 fieldset {
@@ -97,7 +99,11 @@ footer {
 }
 
 .footer-item {
-    margin-bottom: 15px;
+    margin-bottom: 21px;
+}
+
+.footer-item:hover {
+    opacity: 0.5;
 }
 
 header {
@@ -108,8 +114,8 @@ header {
     font-family: 'Open Sans';
     font-weight: 400;
     text-transform: uppercase;
-
 }
+
 
 .header__nav {
     margin-right: 500px;
@@ -123,9 +129,15 @@ header {
 .emailbutton {
     background: #666666;
     height: 40px;
-    width: 380px;
+    width: 300px;
     left: 910px;
     top: 171px;
+    border: none;
+}
+
+.emailbutton:hover {
+    border: 1px solid #FFFDFD;
+
 }
 
 .scnetwork {
@@ -138,9 +150,18 @@ header {
     margin-right: 10px
 }
 
+.facebook:hover {
+    opacity: 0.5;
+}
+
+
 .twitter {
     margin-top: 25px;
     margin-right: 10px
+}
+
+.twitter:hover {
+    opacity: 0.5;
 }
 
 .pinterest {
@@ -148,9 +169,17 @@ header {
     margin-right: 10px
 }
 
+.pinterest:hover {
+    opacity: 0.5;
+}
+
 .instagram {
     margin-top: 25px;
     margin-right: 10px
+}
+
+.instagram:hover {
+    opacity: 0.5;
 }
 
 
@@ -159,9 +188,16 @@ header {
 }
 
 .header__logo {
-    margin-left: 110px;
     margin-right: 60px;
     margin-top: 50px;
+}
+
+.header__logo:hover {
+    opacity: 0.5;
+}
+
+.header__logo:active {
+    opacity: 0.2;
 }
 
 .header__nav {
@@ -174,20 +210,32 @@ header {
 
 }
 
+.header__contact {
+    display: flex;
+    margin-right: -10px;
+}
+
 .header__list-item {
     margin-right: 20px;
     margin-top: 70px;
-
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
 }
+
+.header__list-item:hover {
+opacity: 0.5;
+}
+
+.header__list-item:active {
+ opacity: 0.2;
+}
+
+
 
 .link-info {
     margin-left: 225px;
 } 
-
-
-.contact {
-    margin-right:  110px;   
-}
 
 .guarantee {
     font-family: 'Crimson Text';
@@ -208,7 +256,8 @@ header {
     border-top-style: solid;
     border-color: #666666;
     border-top-width: 1px;
-    white-space: nowrap 
+    white-space: nowrap;
+    margin-top: 10px;
 
 }
 
@@ -228,6 +277,7 @@ header {
 }
 
 .rating {
+    display: flex;
     margin: 0;
     padding: 0;
     border: none;
@@ -235,24 +285,90 @@ header {
 
 }
 
+.rating__caption {
+    margin-bottom: 10px;
+    position: relative;
+    top: 26px;
+}
+
+.rating__group {
+    margin-left: 147px;
+    width: 85px;
+    height: 16px;
+    position: relative;
+    background-image: url(../img/icon/star.svg);
+    background-size: 17px auto;
+
+}
+
 .rating_star {
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 16px;
+    font-size: inherit;
+    position: absolute;
     appearance: none;
-    top: 0px;
-    left: 0px;
-    width: 2em;
-    height: 2em;
     -webkit-appearance: none;
-    background-color: #FFFFFF;
-    -moz-appearance: none;
+    background-size: 17px auto;
+}
+
+.rating_star:checked {
+    background-image: url(../img/icon/star-ch.svg);
 }
 
 .rating_star:nth-of-type(1) {
-    width: 2em;
+    z-index: 5;
+    width: 17px;
 }
 
 .rating_star:nth-of-type(2) {
-    width: 4em;
+    z-index: 4;
+    width: 34px;
 }
+
+.rating_star:nth-of-type(3) {
+    z-index: 3;
+    width: 51px;
+}
+
+.rating_star:nth-of-type(4) {
+    z-index: 2;
+    width: 68px;
+}
+
+.rating_star:nth-of-type(5) {
+    z-index: 1;
+    width: 85px;
+}
+
+.popup {
+   display: none;
+   position: absolute;
+   top: 118px;
+   left: 417px;
+}
+
+.popup__wr {
+    z-index: 5;
+}
+
+.open {
+    display: flex;
+}
+
+.overlay {
+    background: rgba(125, 151, 218, 0.8);
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
 
 .contact__form {
     margin: auto;
@@ -263,12 +379,13 @@ header {
 
 .column__two-input {
     display: flex;
-    gap: 20px;
+    gap: 36px;
 }
 
 .label__wrapper {
     display: flex;
     flex-direction: column;
+    margin-left: -18px;
 }
 
 .contact__label {
@@ -296,7 +413,8 @@ header {
 }
 
 .contact__wrapper {
-    margin-top: 20px;
+    margin-top: 23px;
+    margin-left: -22px;
 }
 
 .textarea {
@@ -304,14 +422,15 @@ header {
     border: 1px solid rgba(0, 0, 0, 0.2);
     width: 600px;
     height: 150px;
+    margin-left: -18px;
 }
 
 .checkbox__wrapper {
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 17px;
+    margin-bottom: 24px;
     gap: 15px;
     display: flex;
-    margin-left: 15px;
+    margin-left: -6px;
 }
 
 .checkbox__text {
@@ -320,7 +439,7 @@ header {
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    margin-left: 15px;
+    margin-left: 19px;
 }
 
 .checkbox {
@@ -355,4 +474,60 @@ header {
     flex-direction: row;
     align-items: center;
     padding: 9px 22px;
+    margin-left: -18px;
+}
+
+button:hover {
+    background: #C29974;
+}
+
+button:active {
+    background: #CFAF91;
+}
+
+button:disabled {
+    background: #C7C1C1;
+}
+
+.close  {
+    cursor: pointer;
+    background: none;
+    position: relative;
+    top: -542px;
+    left: 693px;
+}
+
+.close:hover {
+    background: none;
+    opacity: 0.7;
+}
+
+.close:active {
+    background: none;
+    opacity: 0.4;
+}
+
+.name__input:hover {
+    border: 1px solid #C29974;
+}
+
+.name__input:checked {
+    border: 10px solid #C29974;
+}
+
+.contact__input:hover {
+    border: 1px solid #C29974;
+}
+
+.arrow {
+    margin-top: 8px;
+    width: 8px;
+    height: 12px;
+    background-image: url(../img/icon/arrow.svg);
+}
+
+.arrow:hover {
+    width: 8px;
+    height: 12px;
+    background-image: url(../img/icon/arrow-hover.svg);
 }
