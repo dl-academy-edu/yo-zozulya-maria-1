@@ -88,3 +88,16 @@
 .pointers-active {
  color: #C29974;
    }
+
+.blog-pointers {
+    
+ }
+
+.blog-pointers:hover {
+    color: #AAAAAA;
+}
+
+.blog-pointers:active {
+    color: #C29974;
+}
+
