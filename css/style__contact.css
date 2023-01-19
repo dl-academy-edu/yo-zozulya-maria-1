@@ -1,0 +1,54 @@
+.contact__title {
+    margin-top: 60px;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contact__pointers {
+    display: flex;
+    font-family: Crimson Text;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.contact__pointers-arrow {
+    margin-top: 5px;
+}
+
+.contact__pointers-blog {
+    opacity: 0.5;
+}
+
+.contact__items {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.contact__text {
+    margin-left: 120px;
+    width: 380px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.contact__text-support {
+    margin-bottom: 20px;
+}
+
+.contact__text-message {
+    margin-bottom: 20px;
+}
+
+.contact__text-expert {
+    font-family: 'Montserrat';
+    font-size: 26px;
+    font-weight: 600;
+    color: #C29974;
+    text-transform: uppercase;
+}
